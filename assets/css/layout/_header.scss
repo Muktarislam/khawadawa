@@ -1,0 +1,69 @@
+.header-area{
+    position: absolute;
+    z-index: 100;
+    padding: 20px 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    @include max-xs{
+        position: inherit;
+        padding: 0;
+    }
+
+    .logo{
+        @include max-xs{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 50%;
+        }
+    }
+    
+    @include min-sm{
+        text-align: center;
+    }
+    a{
+        color: $white;
+    }
+    padding: 20px 0;
+    .menu{
+        @include max-xs{
+            display:block;
+        }
+        @include max-xs{
+            display: none;
+        }
+        ul{
+            li{
+                a{
+                    display: block;
+                    margin-left: 20px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    @include min-md{
+                        font-size: 16px;
+                        margin-left: 15px;
+                    }
+
+                    @include min-sm{
+                        margin-top: 15px;
+                    }
+    
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slicknav_menu {
+    display:none;
+    @include max-xs{
+        display:block;
+    }
+}

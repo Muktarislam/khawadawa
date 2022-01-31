@@ -1,0 +1,52 @@
+.cta-top-area{
+    background-color: $white;
+
+    .section-title{
+        margin-bottom: 0;
+
+        p{
+            font-style: italic;
+            font-size: 22px;
+            color: $white;
+
+            @include max-xs{
+                font-size: 18px;
+            }
+        }
+
+        h4{
+            font-size: 40px;
+            margin-top: 30px;
+            padding-bottom: 25px;
+            color: $white;
+
+            @include min-sm{
+                font-size: 35px;
+            }
+
+            @include max-xs{
+                text-align: center;
+                line-height: 35px;
+                font-size: 22px;
+            }
+
+
+            span{
+                display: inline-block;
+                text-transform: uppercase;
+                color: $primary-color;
+                font-size: 45px;
+                font-weight: 900;
+                @include min-sm{
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+
+                @include max-xs{
+                    text-align: center;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

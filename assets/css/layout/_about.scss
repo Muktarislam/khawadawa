@@ -1,0 +1,62 @@
+.about-area{
+    .about-content{
+        @include min-lg{
+            margin-bottom: 60px;
+        }
+        text-align: left;
+        p{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+    }
+
+    .about-gallery{
+        position: relative;
+
+        @include max-xs{
+            position: inherit;
+        }
+        @include max-xs{
+            margin-top: 20px;
+        }
+        
+        
+        @include min-sm{
+            margin-top: 40px;
+        }
+
+        @include min-md{
+            margin-top: 60px;
+        }
+        
+        img{
+            border: 1px solid #ddd;
+            &:nth-child(1){
+                max-width: 450px;
+                @include max-xs{
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2){
+                position: absolute;
+                right: 80px;
+                bottom: -80px;
+                max-width: 370px;
+                @include max-xs{
+                    width: 100%;
+                    display: none;
+                }
+                @include min-xl{
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .about-page-content{
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}

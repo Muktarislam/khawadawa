@@ -1,0 +1,37 @@
+.breadcump-area{
+    padding: 150px 0 50px;
+
+    @include max-xs{
+        padding: 70px 0 40px;
+    }
+
+    h4{
+        text-transform: capitalize;
+        color: $white;
+        font-size: 40px;
+
+        @include max-xs{
+            font-size: 30px;
+        }
+    }
+
+    ul{
+        display: flex;
+        margin-top: 15px;
+
+        li{
+            color: $white;
+            text-transform: capitalize;
+            margin-right: 10px;
+
+            a{
+                color: $white;
+                transition: .3s;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

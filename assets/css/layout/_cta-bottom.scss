@@ -1,0 +1,38 @@
+.cta-bottom-area{
+    padding: 50px 0;
+    background-color: $primary-color;
+     color: $white;
+
+    h2{
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 700;
+
+        @include min-sm{
+            font-size: 30px;
+        }
+        @include max-xs{
+            text-align: center;
+            font-size: 33px;
+            margin-bottom: 10px;
+        }
+    }
+    a {
+        display: block;
+        color: $white;
+        font-size: 18px;
+        margin: 8px 0;
+        font-weight: 500;
+
+        @include max-xs{
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+        i{
+            margin-right: 10px;
+        }
+    }
+}
